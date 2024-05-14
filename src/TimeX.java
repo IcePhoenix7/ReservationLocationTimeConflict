@@ -18,11 +18,25 @@ public class TimeX extends Date  {
             val = date.getMinutes()-this.getMinutes();
         return val <= 0;
     }
+    public boolean afterY(Date date){//it might have some issues unlike beforeX
+        int val;
+        val = date.getHours() - this.getHours();
+        if(val == 0)
+            val = date.getMinutes()-this.getMinutes();
+        return val < 0;
+    }
     public boolean beforeX(Date date){
         int val;
         val = date.getHours() - this.getHours();
         if(val == 0)
             val = date.getMinutes()-this.getMinutes();
         return val >= 0;
+    }
+    public boolean beforeY(Date date){
+        int val;
+        val = date.getHours() - this.getHours();
+        if(val == 0)
+            val = date.getMinutes()-this.getMinutes();
+        return val > 0;
     }
 }
