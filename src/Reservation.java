@@ -1,6 +1,19 @@
 public class Reservation {
-    TimeX startTime,endTime;
+    String timeInterval;
     Location location;
+
+    public Reservation(String timeInterval, Location location) {
+        this.timeInterval = timeInterval;
+        this.location = location;
+    }
+
+    public String getTimeInterval() {
+        return timeInterval;
+    }
+
+    public void setTimeInterval(String timeInterval) {
+        this.timeInterval = timeInterval;
+    }
 
     public Location getLocation() {
         return location;
@@ -8,28 +21,5 @@ public class Reservation {
 
     public void setLocation(Location location) {
         this.location = location;
-    }
-
-    public Reservation(TimeX startTime, TimeX endTime, Location location) {
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.location = location;
-
-    }
-
-    public TimeX getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(TimeX startTime) {
-        this.startTime = startTime;
-    }
-
-    public TimeX getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(TimeX endTime) {
-        this.endTime = endTime;
     }
 }
