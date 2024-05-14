@@ -50,7 +50,7 @@ public class Location {
 
     public String getOpenTime() {
         return openTime;
-    }//
+    }//done
 
     public void setOpenTime(String openTime) {
         this.openTime = openTime;
